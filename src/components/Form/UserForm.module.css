@@ -1,0 +1,92 @@
+.form {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.form header {
+  color: #8e0c92;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.total {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.total span{
+  color:rgb(173, 72, 0);
+
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.input.valid input{
+  border: green;
+  background-color: #95ffd8;
+}
+
+.input input {
+  border-radius: 10px;
+  padding: 1%;
+  max-width: fit-content;
+  margin-left: 5%;
+}
+.input span{
+  font-size: medium;
+  margin-left: 5%;
+  color: red;
+}
+
+.actions {
+  text-align: right;
+}
+
+.actions button {
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #d519cc;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #8e0c92;
+  border-color: #8e0c92;
+  color: white;
+}
+.actions button:disabled{
+  background-color: #826084;
+  border-color: #826084;
+cursor: not-allowed;
+}
+
+.actions .button--close {
+  color: #d519cc;
+}
+
+.actions .button {
+  background-color: #d519cc;
+  color: white;
+}
+ 
+  .number_input::-webkit-outer-spin-button,
+  .number_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
